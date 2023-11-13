@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+    <!-- product_detail.xml -->
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+    android:background="#f8f8f8"
+    tools:context=".product.DetailActivity">
+
+
+    <!-- Product Image -->
+        <ImageView
+            android:id="@+id/productImageView"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/toys" />
+
+        <!-- Product Name -->
+        <TextView
+            android:id="@+id/productNameTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/productImageView"
+            android:layout_marginTop="16dp"
+            android:text="Product Name"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <!-- Product Price -->
+        <TextView
+            android:id="@+id/productPriceTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/productNameTextView"
+            android:layout_marginTop="8dp"
+            android:text="$19.99"
+            android:textSize="16sp" />
+
+        <!-- Product Description -->
+        <TextView
+            android:id="@+id/productDescriptionTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/productPriceTextView"
+            android:layout_marginTop="16dp"
+            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce euismod aliquet nisl, id posuere libero aliquam eget."
+            android:textSize="16sp" />
+
+        <!-- Add to Cart Button -->
+        <Button
+            android:id="@+id/addToCartButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/productDescriptionTextView"
+            android:layout_marginTop="16dp"
+            android:text="Add to Cart" />
+
+    </RelativeLayout>

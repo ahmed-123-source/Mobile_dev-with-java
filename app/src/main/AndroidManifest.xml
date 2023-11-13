@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.arvind.marketmakerrs">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_market"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MarketMakerrs">
+        <activity android:name=".TestttttActivity"></activity>
+        <activity android:name=".TestActivity" />
+        <activity android:name=".product.RecuProductActivity" />
+        <activity android:name=".product.RecuActivity" />
+        <activity android:name=".product.CartActivity" />
+        <activity android:name=".product.CartProductActivity" />
+        <activity android:name=".product.DetailActivity" />
+        <activity android:name=".product.CategoryActivity" />
+        <activity android:name=".product.AddActivity" />
+        <activity android:name=".product.MainProductActivity" />
+        <activity android:name=".product.UpdateActivity" />
+        <activity android:name=".AdminActivity" />
+        <activity android:name=".product.UserProductActivity" />
+        <activity android:name=".LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".SignupActivity" />
+        <activity android:name=".MainActivity" />
+    </application>
+
+</manifest>
