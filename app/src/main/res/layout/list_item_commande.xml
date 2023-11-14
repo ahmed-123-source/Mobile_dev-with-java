@@ -1,0 +1,75 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".ListeCommandesActivity">
+
+
+    <!-- Ajoute le RecyclerView ici -->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"/>
+
+
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginHorizontal="140dp"
+        android:layout_marginBottom="8dp"
+        android:text="Delete" />
+
+    <TextView
+        android:id="@+id/textViewNomUtilisateur"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nom Utilisateur"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/textViewDateCommande"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Date Commande"
+        android:textSize="14sp"
+        tools:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/textViewNomProduit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Nom Produit"
+        android:textSize="14sp"
+        tools:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/textViewPrixProduit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Prix Produit"
+        android:textSize="14sp"
+        tools:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/textViewQuantite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Quantité"
+        android:textSize="14sp"
+        tools:visibility="invisible" />
+
+    <!-- Add other TextViews or UI elements as needed -->
+
+</LinearLayout>

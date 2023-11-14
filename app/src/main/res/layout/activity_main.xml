@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/editTextNomUtilisateur"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Nom d'utilisateur"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextDateCommande"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Date de commande"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNomUtilisateur" />
+
+    <EditText
+        android:id="@+id/editTextNomProduit"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Nom du produit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextDateCommande" />
+
+    <EditText
+        android:id="@+id/editTextPrixProduit"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Prix du produit"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNomProduit" />
+
+    <EditText
+        android:id="@+id/editTextQuantite"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Quantité"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPrixProduit" />
+
+    <!-- Ajoute un bouton pour effectuer les opérations CRUD -->
+
+
+    <!-- activity_main.xml -->
+    <Button
+        android:id="@+id/btnAjouterCommande"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ajouter Commande"
+        app:layout_constraintTop_toBottomOf="@+id/editTextQuantite"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:onClick="onClickAjouterCommande" />
+
+    <Button
+        android:id="@+id/btnLireCommandes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lire Commandes"
+        app:layout_constraintTop_toBottomOf="@+id/btnAjouterCommande"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:onClick="onClickLireCommandes" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
